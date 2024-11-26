@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Javascript</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <div class="container">
+    <h1>WELCOME</h1>
+    <H2>SIMPLE CALCULATOR</H2>
+    <div class="calculator">
+    <input type="text" placeholder="Enter First Number" class="input" id="first-number"/>
+    <input type="text" placeholder="Enter Second Number" class="input" id="second-number"/>
+    <div class="buttoncontainer">
+        <button class="button" onclick="add()" id="plus">+</button>
+        <button class="button" onclick="subtract()" id="minus">-</button>
+        <button class="button" onclick="multiply()" id="multiply">*</button>
+        <button class="button" onclick="divide()" id="divide">/</button>
+        </div>
+        <div class="answer-div">Answer:</div>
+        <div>
+            <button id="reset">Reset</button></div>
+        </div>
+    </div>
+     
+    <script src="index.js"></script>
+</body>
+</html>
