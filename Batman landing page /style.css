@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    min-height: 100%;
+}
+.top{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://wallpaperbat.com/img/799944-batman-4k-dark-night-4k-wallpaper-hd-superheroes-4k-wallpaper-image-photo-and-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.top .overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.161);
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: white;
+    bottom:5%;
+    
+}
+.text h1{
+    text-decoration: underline;
+    font-weight: 200%;
+    font-size: 2vw;
+}
+.text .images{
+    background-image: url(https://imgs.search.brave.com/95Pps2f8AujoSy93sAGxKftA_NGUrXGRKgXlrQIiLag/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDcxNDcx/MjYuanBn);
+    background-size: cover;
+    background-position: center; 
+    height: 300px;
+    width: 220px; 
+}
+.rtext{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+.rtext p{
+    font-size: 12px;
+}
+.bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+.b1{
+    width: 30%;
+    min-height: inherit;
+    background-image: url(https://cdn.pixabay.com/photo/2019/11/15/21/25/tank-4629329_640.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.b1 h1{
+    color: white;
+    text-align: center;
+    padding:30px;
+}
+.b1 p{
+    color: white;
+    text-align: center;
+    padding:15px;
+}
+.b2{
+    color: white;
+    text-align: center;
+    width: 30%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+.b2 .up{
+    color: white;
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://cdn.pixabay.com/photo/2024/06/22/16/55/ai-generated-8846672_640.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.b2 .up h1{
+    text-align: center;
+    padding: 30px;
+}
+.b2 .up p{
+    color: white;
+    text-align: center;
+    padding: 15%;
+}
+.b2 .down{
+    color: white;
+    text-align: center;
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://imgs.search.brave.com/5qEyGaM_E3RPAg0BZK3dHFcd4ZNe8JyEzEDFfxTZcu8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9jaXR5LWxhbmRz/Y2FwZS1iYWNrZ3Jv/dW5kLWNvcHktc3Bh/Y2VfMTE3OTEzMC01/MjkyMTYuanBnP3Np/emU9NjI2JmV4dD1q/cGc);
+    background-size: cover;
+    background-position: center;
+}
+.b2 .down .overlay{
+    position:relative;
+    width:100%;
+    min-height: 20vh;
+    background-color: rgba(255, 255, 255, 0.349);
+}
+.b3{
+    color: white;
+    width: 40%;
+    min-height: inherit;
+    background-image: url(https://imgs.search.brave.com/Vf2GqJ7wkX8ZhjDFOrwDpjH6Omy7lTCNIVjN8UOV8Wg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC9WSzZFV1Yx/LmpwZw);
+    background-size:cover;
+    background-position: center;
+}
+.b3 .overlay{
+    color: white;
+    justify-content: right;
+    position: relative;
+    margin-left: 50%;
+    width: 50%;
+    height: 100%;
+    padding: 4vh 3vh;
+}
+.b3 .overlay p{
+    padding:1.2vh;
+}
+@media(max-width:700px){
+    .rtext{
+        flex-direction: column;
+    }
+    .b3 .overlay{
+        width: 100%;
+        margin-left: initial;
+    }
+}
+
+@media(max-width:500px){
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1{
+        font-size: 5vh;
+    }
+    .text .image{
+        height: 200px;
+        width: 140px;
+        margin-top: 20px;
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext p{
+        margin-top:10px;
+    }
+    .icons{
+        margin-top: 10px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width: 100%;
+        min-height: 30vh;
+    }
+    .b2{
+        width: 100%;
+    }
+    .b2 .up{
+        min-height: 30vh;
+    }
+    .b3{
+        width: 100%;
+        min-height: 30vh;
+        background-position: left;
+    }
+}
